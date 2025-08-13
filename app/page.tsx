@@ -20,7 +20,7 @@ export default function Home() {
           </h1>
         </header>
 
-        <section id="vsl" className="mt-8">
+        {/* <section id="vsl" className="mt-8">
           <div className="relative border border-border rounded-lg overflow-hidden bg-muted">
             <div className="aspect-video w-full bg-secondary/40" />
             <button
@@ -31,7 +31,7 @@ export default function Home() {
               <Play className="h-6 w-6" />
             </button>
           </div>
-        </section>
+        </section> */}
 
         <p className="mt-6 text-base sm:text-lg text-muted-foreground">
           If you can build, you can sell. You just haven’t been shown the
