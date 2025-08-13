@@ -1,103 +1,104 @@
-import Image from "next/image";
+import { Play } from "lucide-react";
+import Script from "next/script";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="font-sans min-h-screen py-16 sm:py-20">
+      <div className="mx-auto w-full max-w-[720px] px-5 sm:px-6">
+        <nav className="mb-10">
+          <a href="/" aria-label="Home" className="inline-flex items-center">
+            <span className="text-base font-semibold tracking-tight">
+              AI Solopreneur Accelerator
+            </span>
+          </a>
+        </nav>
+        <header className="space-y-6">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight">
+            From Code to Clients. Build What You Love, Sell With Confidence,
+            Scale Without Burnout
+          </h1>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+        <section id="vsl" className="mt-8">
+          <div className="relative border border-border rounded-lg overflow-hidden bg-muted">
+            <div className="aspect-video w-full bg-secondary/40" />
+            <button
+              type="button"
+              aria-label="Play VSL"
+              className="absolute inset-0 m-auto h-14 w-14 rounded-full bg-background/90 border border-border shadow-sm flex items-center justify-center hover:bg-background transition-colors"
+            >
+              <Play className="h-6 w-6" />
+            </button>
+          </div>
+        </section>
+
+        <p className="mt-6 text-base sm:text-lg text-muted-foreground">
+          If you can build, you can sell. You just haven’t been shown the
+          playbook yet.
+        </p>
+
+        <hr className="my-12 border-border" />
+
+        <section className="space-y-4">
+          <h2 className="text-lg font-semibold">The Pain</h2>
+          <p className="text-base leading-relaxed">
+            You’ve got the skills to deliver incredible work, but the income
+            doesn’t match. Projects come in waves. Leads trickle. You see others
+            with worse offers growing faster. It’s not your product. It’s not
+            the market. It’s that no one’s taught you how to package, price, and
+            close in a way that feels natural to you.
+          </p>
+        </section>
+
+        <hr className="my-12 border-border" />
+
+        <section className="space-y-4">
+          <h2 className="text-lg font-semibold">The Promise</h2>
+          <p className="text-base leading-relaxed">
+            In the AI Solopreneur Accelerator, I’ll work with you to:
+          </p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Turn your technical skill into an irresistible AI offer</li>
+            <li>Price for profit and position for authority</li>
+            <li>Build a simple, repeatable sales system</li>
+          </ul>
+          <p className="text-base leading-relaxed">
+            So you can finally have consistent $10k+ months — without burning
+            out or chasing clients.
+          </p>
+        </section>
+
+        <hr className="my-12 border-border" />
+
+        <section className="space-y-4">
+          <h2 className="text-lg font-semibold">Why This Works</h2>
+          <p className="text-base leading-relaxed">
+            Sales isn’t magic. It’s a skill. A skill that can be learned,
+            practiced, and mastered, especially by people who think in systems.
+            I’ll show you the exact process I use (and teach) to take technical
+            solopreneurs from struggling for leads to booked-out and in demand.
+          </p>
+        </section>
+
+        <div className="mt-14 border-t border-border pt-10">
+          <div className="space-y-4">
+            <h3 className="text-2xl font-semibold mb-8 w-full">
+              Ready to make it happen?
+            </h3>
+            <div className="p-4 rounded-lg border border-muted h-[1000px]">
+              <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/finn-elliott/aisa-demo-call"
+                style={{ minWidth: 320, height: "1000px" }}
+              />
+            </div>
+            <Script
+              src="https://assets.calendly.com/assets/external/widget.js"
+              strategy="afterInteractive"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </main>
   );
 }
