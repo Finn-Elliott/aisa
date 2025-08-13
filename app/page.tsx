@@ -1,4 +1,5 @@
 import { Play } from "lucide-react";
+import Link from "next/link";
 import Script from "next/script";
 
 export default function Home() {
@@ -6,11 +7,11 @@ export default function Home() {
     <main className="font-sans min-h-screen py-16 sm:py-20">
       <div className="mx-auto w-full max-w-[720px] px-5 sm:px-6">
         <nav className="mb-10">
-          <a href="/" aria-label="Home" className="inline-flex items-center">
+          <Link href="/" aria-label="Home" className="inline-flex items-center">
             <span className="text-base font-semibold tracking-tight">
               AI Solopreneur Accelerator
             </span>
-          </a>
+          </Link>
         </nav>
         <header className="space-y-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight">
