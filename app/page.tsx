@@ -15,8 +15,8 @@ export default function Home() {
         </nav>
         <header className="space-y-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight">
-            You're One Step Away From Building A $10k/mo Solo Developer Business
-            In Less Than 180 Days
+            You&apos;re One Step Away From Building A $10k/mo Solo Developer
+            Business In Less Than 180 Days
           </h1>
         </header>
 
@@ -35,10 +35,10 @@ export default function Home() {
           </h2>
           <div className="aspect-video w-full">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/234Bc3BAf2w?controls=0&disablekb=1&modestbranding=1&rel=0&fs=0"
               title="YouTube video player"
               className="w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
